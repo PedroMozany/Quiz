@@ -65,7 +65,7 @@ public class Quiz {
 
 
     public String toString() {
-        return "Usuario: " + this.usuario + "\n" +
+        return "Usuario(a): " + this.usuario + "\n" +
                 "Acertos: " + acertos + "\n" +
                 "Erros: " + erros;
     }
