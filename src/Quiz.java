@@ -39,7 +39,7 @@ public class Quiz {
      * @param resp
      * @return Vai retorna true ou false com base na resposta
      */
-    public boolean alternativaCorreta(Pergunta pergunta, char resp) {
+    public boolean alternativaCorreta(Pergunta pergunta, String resp) {
         if (pergunta.getRespota() == resp) {
             System.out.println("Acertou!!");
             contagemPontos(true);
@@ -84,7 +84,7 @@ public class Quiz {
                 Scanner scannerLinha = new Scanner(linha);
                 scannerLinha.useDelimiter(";");
                 String perguntar = scannerLinha.next();
-                char responter = scannerLinha.next().charAt(0);
+                String responter = scannerLinha.next();
 
                 Pergunta pergunta = new Pergunta(perguntar, responter);
 

@@ -12,7 +12,7 @@ public class App {
             for (Pergunta pergunta : quiz.getPerguntas()) {
                 System.out.println(pergunta);
                 System.out.println("Qual é a resposta?");
-                char resp = sc.next().toLowerCase().charAt(0);
+                String resp = sc.next().toLowerCase();
                 quiz.alternativaCorreta(pergunta, resp);
                 System.out.println("\r\n\n\n");
                 System.out.flush();
