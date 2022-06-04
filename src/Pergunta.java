@@ -3,10 +3,10 @@ import java.util.LinkedList;
 public class Pergunta {
     private String pergunta;
     private LinkedList<String> alternativas;
-    private String respota;
+    private char respota;
 
 
-    public Pergunta(String pergunta, String respota) {
+    public Pergunta(String pergunta, char respota) {
         this.pergunta = pergunta;
         this.respota = respota;
         this.alternativas = new LinkedList<>();
@@ -21,7 +21,7 @@ public class Pergunta {
             this.alternativas.add(alternativa);
     }
 
-    public String getRespota() {
+    public char getRespota() {
         return respota;
     }
 
