@@ -53,10 +53,10 @@ public class Quiz {
 
     /**
      * Com base no restono da alternativaCorreta() vai realizar a soma dos acertos e erros
-     * @param ponto
+     * @param resp
      */
-    public void contagemPontos(boolean ponto) {
-        if(ponto == true){
+    public void contagemPontos(boolean resp) {
+        if(resp == true){
             this.acertos++;
         }else{
             this.erros++;
